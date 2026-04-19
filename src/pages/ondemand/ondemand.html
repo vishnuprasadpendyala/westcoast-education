@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>On-demand kurser | Westcoast Education</title>
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/navbar.css" />
+  <link rel="stylesheet" href="../../css/footer.css" />
+  <link rel="stylesheet" href="./ondemand.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Hoppa till innehållet</a>
+  <header></header>
+  <main id="main-content">
+
+    <!-- Hero-sektion -->
+    <section class="ondemand-hero">
+      <div class="container">
+        
+        <h1>Lära flexibelt</h1>
+        <p>
+         Prenumerera på våra on-demand-kurser till ett överkomligt pris. Omedelbar tillgång och stor bekvämlighet.
+        </p>
+        <div class="ondemand-stats">
+          <div class="ondemand-stat">
+            <strong id="totalOndemand">–</strong>
+            <span>Kurser</span>
+          </div>
+          <div class="ondemand-stat">
+            <strong>299 kr/mån</strong>
+            <span>Prenumeration</span>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Kurslista med prenumerationsbanner -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Prenumerationsbanner — fylls i av JS -->
+        <div id="subscription-card">
+          <div class="loading-container"><div class="spinner"></div></div>
+        </div>
+
+        <!-- Rubrik för kurslistan -->
+        <div class="ondemand-header">
+          <h2>Tillgängliga kurser</h2>
+          <p id="ondemand-count"></p>
+        </div>
+
+        <!-- Kurskort-rutnät -->
+        <div id="ondemand-grid" class="ondemand-grid">
+          <div class="loading-container"><div class="spinner"></div></div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <footer></footer>
+  <script type="module" src="./ondemand.js"></script>
+</body>
+</html>

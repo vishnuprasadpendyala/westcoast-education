@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Min sida | Westcoast Education</title>
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/navbar.css" />
+  <link rel="stylesheet" href="../../css/footer.css" />
+  <link rel="stylesheet" href="./student-dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Hoppa till innehållet</a>
+  <header></header>
+  <main id="main-content">
+    <div class="dashboard-layout">
+
+      <!-- Sidebar -->
+      <aside class="dashboard-sidebar">
+        <div class="sidebar-brand">
+          <span class="brand-dot"></span>
+          <span>Student Portal</span>
+        </div>
+        <div class="sidebar-profile">
+          <div class="profile-avatar">
+            <span id="avatarInitial">?</span>
+          </div>
+          <div class="profile-info">
+            <strong id="studentName">Laddar...</strong>
+            <span id="studentEmail"></span>
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <button class="dash-link active" data-tab="overview">
+            <span class="nav-icon">◉</span> Översikt
+          </button>
+          <button class="dash-link" data-tab="bookings">
+            <span class="nav-icon">◉</span> Mina bokningar
+          </button>
+          <button class="dash-link" data-tab="recommendations">
+            <span class="nav-icon">◉</span> Rekommendationer
+          </button>
+          <button class="dash-link" data-tab="messages">
+            <span class="nav-icon">◉</span> Meddelanden
+          </button>
+          <button class="dash-link" data-tab="profile">
+            <span class="nav-icon">◉</span> Min profil
+          </button>
+        </nav>
+        <button class="logout-btn" id="logoutBtn">
+          <span>→</span> Logga ut
+        </button>
+      </aside>
+
+      <!-- Main content -->
+      <div class="dashboard-main">
+
+        <!-- Översikt flik -->
+        <div id="tab-overview" class="dash-tab">
+          <div class="page-header">
+            <div>
+              <p class="page-label">Välkommen tillbaka</p>
+              <h1 id="welcomeName"></h1>
+            </div>
+          </div>
+          <div id="overview-content">
+            <div class="loading-container"><div class="spinner"></div></div>
+          </div>
+        </div>
+
+        <!-- Bokningar flik -->
+        <div id="tab-bookings" class="dash-tab" hidden>
+          <div class="page-header">
+            <div>
+              <p class="page-label">Din historik</p>
+              <h1>Mina bokningar</h1>
+            </div>
+          </div>
+          <div id="bookings-content">
+            <div class="loading-container"><div class="spinner"></div></div>
+          </div>
+        </div>
+
+        <!-- Rekommendationer flik -->
+        <div id="tab-recommendations" class="dash-tab" hidden>
+          <div class="page-header">
+            <div>
+              <p class="page-label">Anpassat för dig</p>
+              <h1>Rekommendationer</h1>
+            </div>
+          </div>
+          <div id="recommendations-content">
+            <div class="loading-container"><div class="spinner"></div></div>
+          </div>
+        </div>
+
+        <!-- Meddelanden flik -->
+        <div id="tab-messages" class="dash-tab" hidden>
+          <div class="page-header">
+            <div>
+              <p class="page-label">Din kommunikation</p>
+              <h1>Meddelanden</h1>
+            </div>
+          </div>
+          <div id="messages-content">
+            <div class="loading-container"><div class="spinner"></div></div>
+          </div>
+        </div>
+
+        <!-- Profil flik -->
+        <div id="tab-profile" class="dash-tab" hidden>
+          <div class="page-header">
+            <div>
+              <p class="page-label">Ditt konto</p>
+              <h1>Min profil</h1>
+            </div>
+          </div>
+          <div id="profile-content">
+            <div class="loading-container"><div class="spinner"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script type="module" src="./student-dashboard.js"></script>
+</body>
+</html>

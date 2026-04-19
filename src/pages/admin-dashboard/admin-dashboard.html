@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | Westcoast Education</title>
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/navbar.css" />
+  <link rel="stylesheet" href="../../css/footer.css" />
+  <link rel="stylesheet" href="./admin-dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Hoppa till innehållet</a>
+  <header></header>
+  <main id="main-content">
+    <div class="dashboard-layout">
+
+      <!-- Sidebar -->
+      <aside class="dashboard-sidebar">
+        <div class="sidebar-brand">
+          <span class="brand-dot"></span>
+          <span>Admin Portal</span>
+        </div>
+        <div class="sidebar-profile">
+          <div class="profile-avatar">
+            <span id="adminInitial">A</span>
+          </div>
+          <div class="profile-info">
+            <strong id="adminName">Admin</strong>
+            <span id="adminEmail"></span>
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <button class="dash-link active" data-tab="overview">
+            <span class="nav-icon">◉</span> Översikt
+          </button>
+          <button class="dash-link" data-tab="courses">
+            <span class="nav-icon">◉</span> Kurser
+          </button>
+          <button class="dash-link" data-tab="students">
+            <span class="nav-icon">◉</span> Studenter
+          </button>
+          <button class="dash-link" data-tab="teachers">
+            <span class="nav-icon">◉</span> Lärare
+          </button>
+          <button class="dash-link" data-tab="bookings">
+            <span class="nav-icon">◉</span> Bokningar
+          </button>
+          <button class="dash-link" data-tab="messages">
+            <span class="nav-icon">◉</span> Meddelanden
+          </button>
+        </nav>
+        <button class="logout-btn" id="logoutBtn">
+          <span>→</span> Logga ut
+        </button>
+      </aside>
+
+      <!-- Main -->
+      <div class="dashboard-main">
+
+        <div id="tab-overview" class="dash-tab">
+          <div class="page-header">
+            <div>
+              <p class="page-label">Välkommen tillbaka</p>
+              <h1>Översikt</h1>
+            </div>
+          </div>
+          <div id="overview-content">
+            <div class="loading-container"><div class="spinner"></div></div>
+          </div>
+        </div>
+
+        <div id="tab-courses" class="dash-tab" hidden>
+          <div class="page-header">
+            <div>
+              <p class="page-label">Hantera innehåll</p>
+              <h1>Kurser</h1>
+            </div>
+            <button class="btn btn-primary btn-sm" id="showAddCourseBtn">+ Lägg till kurs</button>
+          </div>
+
+          <!-- Lägg till kurs formulär -->
+          <div id="add-course-form" class="admin-form-card" hidden>
+            <h2>Lägg till ny kurs</h2>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Kurstitel *</label>
+                <input type="text" id="courseTitle" placeholder="T.ex. Web3 Fundamentals" />
+                <span class="field-error" id="err-title"></span>
+              </div>
+              <div class="form-group">
+                <label>Kursnummer *</label>
+                <input type="text" id="courseNumber" placeholder="T.ex. WEB3-101" />
+                <span class="field-error" id="err-number"></span>
+              </div>
+              <div class="form-group">
+                <label>Antal dagar *</label>
+                <input type="number" id="courseDays" placeholder="5" min="1" />
+                <span class="field-error" id="err-days"></span>
+              </div>
+              <div class="form-group">
+                <label>Kostnad (SEK) *</label>
+                <input type="number" id="coursePrice" placeholder="12000" min="0" />
+                <span class="field-error" id="err-price"></span>
+              </div>
+              <div class="form-group">
+                <label>Område</label>
+                <select id="courseArea">
+                  <option value="web3">Web3 & Blockchain</option>
+                  <option value="ai">Artificiell Intelligens</option>
+                  <option value="cybersecurity">Cybersäkerhet</option>
+                  <option value="devops">DevOps & Cloud</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Format</label>
+                <select id="courseType">
+                  <option value="classroom">Klassrum</option>
+                  <option value="distance">Distans</option>
+                  <option value="ondemand">On-demand</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Startdatum</label>
+                <input type="date" id="coursePlannedDate" />
+              </div>
+              <div class="form-group">
+                <label>Bild-URL</label>
+                <input type="text" id="courseImageUrl" placeholder="https://..." />
+              </div>
+              <div class="form-group">
+                <label>Lärare</label>
+                <select id="courseTeacher">
+                  <option value="">Välj lärare...</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Beskrivning</label>
+              <textarea id="courseDescription" rows="3" placeholder="Kort kursbeskrivning..."></textarea>
+            </div>
+            <div id="add-course-feedback"></div>
+            <div class="form-actions">
+              <button class="btn btn-primary" id="saveCourseBtn">Spara kurs</button>
+              <button class="btn btn-ghost" id="cancelAddCourseBtn">Avbryt</button>
+            </div>
+          </div>
+
+          <!-- Redigera kursschema formulär -->
+          <div id="edit-course-form" class="admin-form-card" hidden>
+            <h2>Redigera kursschema</h2>
+            <input type="hidden" id="editCourseId" />
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Startdatum *</label>
+                <input type="date" id="editPlannedDate" />
+                <span class="field-error" id="err-edit-date"></span>
+              </div>
+              <div class="form-group">
+                <label>Lärare</label>
+                <select id="editCourseTeacher">
+                  <option value="">Välj lärare...</option>
+                </select>
+              </div>
+            </div>
+            <div id="edit-course-feedback"></div>
+            <div class="form-actions">
+              <button class="btn btn-primary" id="saveEditCourseBtn">Spara ändringar</button>
+              <button class="btn btn-ghost" id="cancelEditCourseBtn">Avbryt</button>
+            </div>
+          </div>
+
+          <div id="courses-content">
+            <div class="loading-container"><div class="spinner"></div></div>
+          </div>
+        </div>
+
+        <!-- Studenter flik -->
+        <div id="tab-students" class="dash-tab" hidden>
+          <div class="page-header">
+            <div>
+              <p class="page-label">Hantera användare</p>
+              <h1>Studenter</h1>
+            </div>
+            <button class="btn btn-primary btn-sm" id="showAddStudentBtn">+ Lägg till student</button>
+          </div>
+
+          <div id="add-student-form" class="admin-form-card" hidden>
+            <h2>Lägg till ny student</h2>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Fullständigt namn *</label>
+                <input type="text" id="studentName" placeholder="För- och efternamn" />
+                <span class="field-error" id="err-sName"></span>
+              </div>
+              <div class="form-group">
+                <label>E-postadress *</label>
+                <input type="email" id="studentEmail" placeholder="student@email.se" />
+                <span class="field-error" id="err-sEmail"></span>
+              </div>
+              <div class="form-group">
+                <label>Mobilnummer *</label>
+                <input type="tel" id="studentPhone" placeholder="070-123 45 67" />
+                <span class="field-error" id="err-sPhone"></span>
+              </div>
+              <div class="form-group">
+                <label>Faktureringsadress *</label>
+                <input type="text" id="studentAddress" placeholder="Gatuadress, postnummer, ort" />
+                <span class="field-error" id="err-sAddress"></span>
+              </div>
+              <div class="form-group">
+                <label>Lösenord *</label>
+                <input type="password" id="studentPassword" placeholder="Minst 6 tecken" />
+                <span class="field-error" id="err-sPassword"></span>
+              </div>
+            </div>
+            <div id="add-student-feedback"></div>
+            <div class="form-actions">
+              <button class="btn btn-primary" id="saveStudentBtn">Spara student</button>
+              <button class="btn btn-ghost" id="cancelAddStudentBtn">Avbryt</button>
+            </div>
+          </div>
+
+          <div id="students-content">
+            <div class="loading-container"><div class="spinner"></div></div>
+          </div>
+        </div>
+
+        <!-- Lärare flik -->
+        <div id="tab-teachers" class="dash-tab" hidden>
+          <div class="page-header">
+            <div>
+              <p class="page-label">Hantera personal</p>
+              <h1>Lärare</h1>
+            </div>
+            <button class="btn btn-primary btn-sm" id="showAddTeacherBtn">+ Lägg till lärare</button>
+          </div>
+
+          <div id="add-teacher-form" class="admin-form-card" hidden>
+            <h2>Lägg till ny lärare</h2>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Namn *</label>
+                <input type="text" id="teacherName" placeholder="För- och efternamn" />
+                <span class="field-error" id="err-tName"></span>
+              </div>
+              <div class="form-group">
+                <label>E-postadress *</label>
+                <input type="email" id="teacherEmail" placeholder="namn@westcoast.edu" />
+                <span class="field-error" id="err-tEmail"></span>
+              </div>
+              <div class="form-group">
+                <label>Specialisering</label>
+                <select id="teacherSpec">
+                  <option value="web3">Web3 & Blockchain</option>
+                  <option value="ai">Artificiell Intelligens</option>
+                  <option value="cybersecurity">Cybersäkerhet</option>
+                  <option value="devops">DevOps & Cloud</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Bio</label>
+              <textarea id="teacherBio" rows="2" placeholder="Kort beskrivning av läraren..."></textarea>
+            </div>
+            <div id="add-teacher-feedback"></div>
+            <div class="form-actions">
+              <button class="btn btn-primary" id="saveTeacherBtn">Spara lärare</button>
+              <button class="btn btn-ghost" id="cancelAddTeacherBtn">Avbryt</button>
+            </div>
+          </div>
+
+          <div id="teachers-content">
+            <div class="loading-container"><div class="spinner"></div></div>
+          </div>
+        </div>
+
+        <!-- Bokningar flik -->
+        <div id="tab-bookings" class="dash-tab" hidden>
+          <div class="page-header">
+            <div>
+              <p class="page-label">Hantera bokningar</p>
+              <h1>Bokningar per kurs</h1>
+            </div>
+          </div>
+          <div id="bookings-content">
+            <div class="loading-container"><div class="spinner"></div></div>
+          </div>
+        </div>
+
+        <!-- Meddelanden flik -->
+        <div id="tab-messages" class="dash-tab" hidden>
+          <div class="page-header">
+            <div>
+              <p class="page-label">Kommunikation</p>
+              <h1>Meddelanden</h1>
+            </div>
+          </div>
+          <div id="admin-messages-content">
+            <div class="loading-container"><div class="spinner"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script type="module" src="./admin-dashboard.js"></script>
+</body>
+</html>

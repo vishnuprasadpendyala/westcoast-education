@@ -1,0 +1,462 @@
+
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: calc(100vh - 68px);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.dashboard-sidebar {
+  background: #0a0f1e;
+  color: white;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Varumärkesrad längst upp i sidomenyn */
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Glödande blå prick i varumärkesraden */
+.brand-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #3b82f6;
+  box-shadow: 0 0 8px #3b82f6;
+  flex-shrink: 0;
+}
+
+/* Profilkort med avatar och admininfo */
+.sidebar-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Avatar med adminens initialer */
+.profile-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+  font-family: 'DM Mono', monospace;
+}
+
+.profile-info strong {
+  display: block;
+  font-size: 0.875rem;
+  color: white;
+  font-weight: 600;
+}
+
+.profile-info span {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.4);
+}
+
+/* Navigeringslänkar i sidomenyn */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+/* Navigationsknappar */
+.dash-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.45);
+  transition: all 0.15s ease;
+  text-align: left;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Geometrisk ikon bredvid navlänk */
+.nav-icon {
+  font-size: 0.75rem;
+  width: 16px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.dash-link:hover {
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.85);
+}
+
+/* Aktiv navlänk med blå vänsterkant */
+.dash-link.active {
+  background: rgba(59,130,246,0.15);
+  color: #60a5fa;
+  border-left: 2px solid #3b82f6;
+}
+
+.dash-link.active .nav-icon { opacity: 1; }
+
+/* Utloggningsknapp längst ner i sidomenyn */
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  color: rgba(255,255,255,0.3);
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.15s ease;
+}
+
+.logout-btn:hover {
+  border-color: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.6);
+}
+
+
+.dashboard-main {
+  padding: 40px;
+  background: #f8fafc;
+  overflow-y: auto;
+}
+
+/* Sidans rubriksektion med label och h1 */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Liten etikett ovanför sidrubriken */
+.page-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 4px;
+}
+
+.page-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  margin-bottom: 0;
+}
+
+/* Fyra statistikkort i rad */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+/* Enskilt statistikkort med blå toppkant */
+.stat-card {
+  background: white;
+  border-radius: 14px;
+  padding: 22px 24px;
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+
+/* Stort värde i statistikkort */
+.stat-card .stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0f172a;
+  display: block;
+  letter-spacing: -0.02em;
+  font-family: 'DM Mono', monospace;
+}
+
+/* Etikett under värdet */
+.stat-card .stat-label {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Kort för formulär i admindashboard */
+.admin-form-card {
+  background: white;
+  border-radius: 14px;
+  padding: 28px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.admin-form-card h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* Tvåkolumnslayout för formulärfält */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Knappar i formulär */
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Grupperat kurskort per område */
+.course-group {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+/* Rubrikrad för kursgrupp */
+.course-group-header {
+  background: #f8fafc;
+  padding: 12px 20px;
+  font-weight: 700;
+  color: #0f172a;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Grupperade bokningar per kurs */
+.booking-group {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+/* Rubrikrad med kurstiteln och åtgärdsknappar */
+.booking-group-header {
+  background: #f8fafc;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.booking-group-header h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Badge som visar antal bokningar */
+.booking-count {
+  background: #3b82f6;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: 'DM Mono', monospace;
+}
+
+/* Sektionsrubrik */
+.bookings-heading {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 16px;
+}
+
+/* Enskild bokningsrad */
+.booking-item {
+  background: white;
+  border-radius: 12px;
+  padding: 18px 20px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.booking-item:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.booking-item-info h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.booking-item-info p {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+/* Höger sida med pris och statusbadge */
+.booking-item-meta {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.booking-item-meta strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #0f172a;
+  font-weight: 700;
+  font-family: 'DM Mono', monospace;
+}
+
+/* Statusbadge för bokningsstatus */
+.status-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.status-confirmed { background: #dcfce7; color: #166534; }
+.status-cancelled { background: #fee2e2; color: #991b1b; }
+.status-pending   { background: #fef3c7; color: #92400e; }
+
+/* Oläst meddelande markeras med blå vänsterkant */
+.unread-message {
+  border-left: 3px solid #3b82f6;
+  background: #f8faff;
+}
+
+/* Tomt tillstånd */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #94a3b8;
+}
+
+.empty-state .empty-icon { font-size: 2.5rem; margin-bottom: 12px; }
+.empty-state h3 { font-size: 1rem; font-weight: 600; color: #475569; margin-bottom: 6px; }
+.empty-state p { font-size: 0.875rem; }
+
+/* Lärarens bio i tabell */
+.teacher-bio-cell { max-width: 300px; font-size: 0.8rem; color: #64748b; }
+
+/* Text när inga bokningar finns */
+.no-bookings-text { color: #94a3b8; padding: 20px; font-size: 0.875rem; }
+
+/* Redigera-knapp — solid istället för outline */
+.btn-outline {
+  background: var(--color-primary-light);
+  color: white;
+  border-color: var(--color-primary-light);
+}
+
+.btn-outline:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: white;
+}
+
+/* Åtgärdsknappar i tabeller — sida vid sida, samma bredd */
+.action-btns {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.action-btns .btn {
+  min-width: 80px;
+  justify-content: center;
+}
+
+/* Tablet — 2 kolumner för statistik och formulär */
+@media (max-width: 1024px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .form-grid  { grid-template-columns: 1fr; }
+}
+
+/* Mobil — en kolumn, horisontell sidebar */
+@media (max-width: 900px) {
+  .dashboard-layout { grid-template-columns: 1fr; }
+  .dashboard-sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 16px;
+  }
+  .sidebar-nav {
+    flex-direction: row;
+    flex: unset;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .dashboard-main { padding: 24px 16px; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+}

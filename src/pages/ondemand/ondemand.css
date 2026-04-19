@@ -1,0 +1,257 @@
+/* Mörk lila gradient för on-demand hero */
+.ondemand-hero {
+  background: linear-gradient(135deg, #1e3a5f, #1e40af);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.ondemand-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.ondemand-hero p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.8);
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+
+/* Badge ovanför rubriken */
+.ondemand-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Statistikrad i hero */
+.ondemand-stats {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.ondemand-stat strong {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+}
+
+.ondemand-stat span {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Flat banner för prenumerationsinformation */
+.sub-banner {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--border-radius-lg);
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow-sm);
+}
+
+.sub-banner-info h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+.sub-banner-info p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+/* Prenumerationspris */
+.sub-banner-price {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #7c3aed;
+  white-space: nowrap;
+}
+
+.sub-banner-price span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+/* Grön banner för aktiv prenumeration */
+.sub-banner-active {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.sub-banner-active h3 { color: #166534; }
+
+/* Knapp som täcker full bredd */
+.btn-full {
+  width: 100%;
+  justify-content: center;
+  padding: 12px;
+  font-size: 0.95rem;
+}
+
+/* Rubrik ovanför kurslistan */
+.ondemand-header {
+  margin-bottom: 24px;
+}
+
+.ondemand-header h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+.ondemand-header p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+/* Rutnät med tre kolumner för kurskort */
+.ondemand-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+}
+
+/* Kort för varje on-demand kurs */
+.ondemand-card {
+  background: var(--bg-card);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.ondemand-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Kortets innehållssektion */
+.ondemand-card-body {
+  padding: var(--spacing-lg);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+/* Kortets övre rad med badge och ägarstatus */
+.ondemand-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+/* Badge för kursområde */
+.ondemand-area-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+/* Visas om studenten äger kursen */
+.ondemand-owned {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #10b981;
+}
+
+.ondemand-card-title {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.4;
+}
+
+.ondemand-card-desc {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* Metadata — dagar och betyg */
+.ondemand-card-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* Taggar för kursinnehåll */
+.ondemand-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Kortets nedre rad med pris och köpknapp */
+.ondemand-card-footer {
+  margin-top: auto;
+  padding: var(--spacing-md) var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-color);
+}
+
+.ondemand-price strong {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+}
+
+/* Visas när kursen ingår i prenumeration */
+.price-included {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #10b981;
+}
+
+/* Tablet — 2 kolumner */
+@media (max-width: 1024px) {
+  .ondemand-grid { grid-template-columns: repeat(2, 1fr); }
+  .sub-banner { flex-direction: column; align-items: flex-start; }
+}
+
+/* Mobil — en kolumn */
+@media (max-width: 640px) {
+  .ondemand-grid { grid-template-columns: 1fr; }
+  .ondemand-hero h1 { font-size: 1.8rem; }
+  .ondemand-stats { gap: 24px; }
+}
+
+.ondemand-card-footer {
+  padding: 0 16px 16px;
+}
+
+.ondemand-card-footer .btn {
+  width: 100%;
+  text-align: center;
+}
