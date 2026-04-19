@@ -1,0 +1,225 @@
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #1e40af 100%);
+  color: white;
+  padding: 80px 0 100px;
+  overflow: hidden;
+}
+
+/* Rutnätsbakgrund för hero */
+.hero-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+/* Hero-layout med två kolumner */
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Badge ovanför rubriken */
+.hero-badge {
+  display: inline-block;
+  background: rgba(245,158,11,0.2);
+  color: #fbbf24;
+  border: 1px solid rgba(245,158,11,0.3);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Responsiv rubrikstorlek med clamp */
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+/* Gradientfärgad text */
+.gradient-text {
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.8);
+  max-width: 500px;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+/* Knappar i hero */
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.hero-actions .btn-outline {
+  color: white;
+  border-color: rgba(255,255,255,0.4);
+}
+.hero-actions .btn-outline:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: white;
+}
+
+/* Statistik längst ner i hero */
+.hero-stats {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat strong {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+}
+
+.stat span {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Rutnät med fyra kolumner för kursområden */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Kort för varje utbildningsområde */
+.area-card {
+  background: white;
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 28px 20px;
+  text-align: center;
+  transition: all var(--transition);
+  cursor: pointer;
+  display: block;
+}
+
+.area-card:hover {
+  border-color: var(--color-primary-light);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.area-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.area-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+/* Kursbadge som visar antal kurser per område */
+.area-count {
+  display: inline-block;
+  background: var(--bg-secondary);
+  color: var(--color-primary-light);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.section-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* CTA-sektion med gradientbakgrund */
+.cta-section {
+  background: linear-gradient(135deg, #1e3a5f, #1e40af);
+}
+
+.cta-box {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-box h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.cta-box p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 32px;
+}
+
+/* Knappar i CTA-sektionen */
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn-outline {
+  color: white;
+  border-color: rgba(255,255,255,0.5);
+}
+.cta-buttons .btn-outline:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Tablet — 2 kolumner för kursområden */
+@media (max-width: 1024px) {
+  .areas-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Mobil — en kolumn, dölj hero-bild */
+@media (max-width: 768px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .hero-visual { display: none; }
+  .hero { padding: 60px 0 80px; }
+  .areas-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-stats { gap: 20px; }
+}
+
+/* Liten mobil — en kolumn för alla rutnät */
+@media (max-width: 480px) {
+  .areas-grid { grid-template-columns: 1fr; }
+  .hero-actions { flex-direction: column; }
+  .cta-buttons { flex-direction: column; align-items: center; }
+}

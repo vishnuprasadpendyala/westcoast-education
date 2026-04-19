@@ -1,0 +1,122 @@
+/* Gradientbakgrund för sidans hero */
+.page-hero {
+  background: linear-gradient(135deg, #1e3a5f, #1e40af);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.page-hero p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.8);
+}
+
+/* Filterrad under hero */
+.filters-bar {
+  margin-bottom: 24px;
+}
+
+/* Dropdown-behållare */
+.filter-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Knapp som öppnar dropdown */
+.filter-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: white;
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition);
+  min-width: 240px;
+  justify-content: space-between;
+  font-family: inherit;
+}
+
+.filter-dropdown-btn:hover {
+  border-color: var(--color-primary-light);
+  color: var(--color-primary-light);
+}
+
+.filter-dropdown-btn.open {
+  border-color: var(--color-primary-light);
+  color: var(--color-primary-light);
+}
+
+/* Pil som roterar när dropdown öppnas */
+.dropdown-arrow {
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.filter-dropdown-btn.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Dropdown-meny med filteralternativ */
+.filter-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-lg);
+  min-width: 240px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+/* Enskilt filteralternativ */
+.filter-option {
+  display: block;
+  width: 100%;
+  padding: 11px 16px;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  font-family: inherit;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.filter-option:last-child {
+  border-bottom: none;
+}
+
+.filter-option:hover {
+  background: var(--bg-secondary);
+  color: var(--color-primary);
+}
+
+/* Aktivt filteralternativ markeras med primärfärg */
+.filter-option.active {
+  background: var(--color-primary-light);
+  color: white;
+  font-weight: 600;
+}
+
+/* Antal synliga kurser */
+.results-count {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 24px;
+}

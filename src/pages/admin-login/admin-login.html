@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login | Westcoast Education</title>
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/navbar.css" />
+  <link rel="stylesheet" href="../../css/footer.css" />
+  <link rel="stylesheet" href="./admin-login.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Hoppa till innehållet</a>
+  <header></header>
+  <main id="main-content">
+    <section class="admin-login-section">
+      <div class="admin-login-box">
+        <div class="admin-login-header">
+          <h1>Admin Login</h1>
+        </div>
+
+        <div class="form-group">
+          <label for="adminEmail">E-postadress</label>
+          <input type="email" id="adminEmail" placeholder="admin@westcoast.edu" autocomplete="email" />
+          <span class="field-error" id="err-aEmail"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="adminPassword">Lösenord</label>
+          <div class="input-with-toggle">
+            <input type="password" id="adminPassword" placeholder="Ditt lösenord" autocomplete="current-password" />
+            <button class="toggle-pwd" data-target="adminPassword" type="button" aria-label="Visa lösenord">👁</button>
+          </div>
+          <span class="field-error" id="err-aPassword"></span>
+        </div>
+
+        <div id="admin-login-feedback"></div>
+
+        <button class="btn btn-primary btn-full" id="adminLoginBtn">Logga in som admin</button>
+
+        <p class="auth-hint">
+          Testanvändare: <strong>admin@westcoast.edu</strong> / <strong>admin123</strong>
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script type="module" src="./admin-login.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logga in | Westcoast Education</title>
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/navbar.css" />
+  <link rel="stylesheet" href="../../css/footer.css" />
+  <link rel="stylesheet" href="./student-login.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Hoppa till innehållet</a>
+  <header></header>
+  <main id="main-content">
+    <section class="auth-section">
+      <div class="auth-login-box">
+
+        <!-- Flikar -->
+        <div class="auth-tabs">
+          <button class="auth-tab active" data-tab="login">Logga in</button>
+          <button class="auth-tab" data-tab="register">Registrera dig</button>
+        </div>
+
+        <!-- Inloggningsformulär -->
+        <div id="tab-login" class="auth-form-panel">
+          <div class="auth-login-header">
+            <h1>Välkommen tillbaka</h1>
+            <p>Logga in med ditt konto</p>
+          </div>
+          <div class="form-group">
+            <label for="loginEmail">E-postadress</label>
+            <input type="email" id="loginEmail" placeholder="din@email.se" autocomplete="email" />
+            <span class="field-error" id="err-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Lösenord</label>
+            <div class="input-with-toggle">
+              <input type="password" id="loginPassword" placeholder="Ditt lösenord" autocomplete="current-password" />
+              <button class="toggle-pwd" data-target="loginPassword" aria-label="Visa lösenord" type="button">👁</button>
+            </div>
+            <span class="field-error" id="err-password"></span>
+          </div>
+          <div id="login-feedback"></div>
+          <button class="btn btn-primary btn-full" id="loginBtn">Logga in</button>
+          <p class="auth-hint">
+            Testanvändare: <strong>johan@test.se</strong> / <strong>test123</strong>
+          </p>
+        </div>
+
+        <!-- Registreringsformulär -->
+        <div id="tab-register" class="auth-form-panel hidden">
+          <div class="auth-login-header">
+            <h1>Skapa konto</h1>
+            <p>Registrera dig gratis idag</p>
+          </div>
+          <div class="form-group">
+            <label for="regName">Fullständigt namn</label>
+            <input type="text" id="regName" placeholder="För- och efternamn" autocomplete="name" />
+            <span class="field-error" id="err-regName"></span>
+          </div>
+          <div class="form-group">
+            <label for="regEmail">E-postadress</label>
+            <input type="email" id="regEmail" placeholder="din@email.se" autocomplete="email" />
+            <span class="field-error" id="err-regEmail"></span>
+          </div>
+          <div class="form-group">
+            <label for="regPhone">Mobilnummer</label>
+            <input type="tel" id="regPhone" placeholder="070-123 45 67" autocomplete="tel" />
+            <span class="field-error" id="err-regPhone"></span>
+          </div>
+          <div class="form-group">
+            <label for="regAddress">Faktureringsadress</label>
+            <input type="text" id="regAddress" placeholder="Gatuadress, postnummer, ort" autocomplete="street-address" />
+            <span class="field-error" id="err-regAddress"></span>
+          </div>
+          <div class="form-group">
+            <label for="regPassword">Lösenord</label>
+            <div class="input-with-toggle">
+              <input type="password" id="regPassword" placeholder="Minst 6 tecken" autocomplete="new-password" />
+              <button class="toggle-pwd" data-target="regPassword" aria-label="Visa lösenord" type="button">👁</button>
+            </div>
+            <span class="field-error" id="err-regPassword"></span>
+          </div>
+          <div class="form-group">
+            <label for="regConfirm">Bekräfta lösenord</label>
+            <div class="input-with-toggle">
+              <input type="password" id="regConfirm" placeholder="Upprepa lösenordet" autocomplete="new-password" />
+              <button class="toggle-pwd" data-target="regConfirm" aria-label="Visa lösenord" type="button">👁</button>
+            </div>
+            <span class="field-error" id="err-regConfirm"></span>
+          </div>
+          <div id="register-feedback"></div>
+          <button class="btn btn-primary btn-full" id="registerBtn">Skapa konto</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script type="module" src="./student-login.js"></script>
+</body>
+</html>

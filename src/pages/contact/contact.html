@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt | Westcoast Education</title>
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/navbar.css" />
+  <link rel="stylesheet" href="../../css/footer.css" />
+  <link rel="stylesheet" href="./contact.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Hoppa till innehållet</a>
+  <header></header>
+  <main id="main-content">
+
+    <!-- Sidhuvud -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Kontakta oss</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Kontaktformulär -->
+          <div class="contact-form-card">
+            <h2>Skicka ett meddelande</h2>
+            <p>Har du frågor om våra kurser eller utbildningar? Vi hjälper dig gärna!</p>
+
+            <div class="form-group">
+              <label for="contactName">Ditt namn *</label>
+              <input type="text" id="contactName" placeholder="För- och efternamn" />
+              <span class="field-error" id="err-cName"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">E-postadress *</label>
+              <input type="email" id="contactEmail" placeholder="din@email.se" />
+              <span class="field-error" id="err-cEmail"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject">Ämne *</label>
+              <select id="contactSubject">
+                <option value="">Välj ett ämne...</option>
+                <option value="course-info">Fråga om kurs</option>
+                <option value="booking">Bokningsfråga</option>
+                <option value="technical">Teknisk support</option>
+                <option value="other">Övrigt</option>
+              </select>
+              <span class="field-error" id="err-cSubject"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Meddelande *</label>
+              <textarea id="contactMessage" rows="5" placeholder="Beskriv din fråga..."></textarea>
+              <span class="field-error" id="err-cMessage"></span>
+            </div>
+
+            <div id="contact-feedback"></div>
+
+            <button class="btn btn-primary btn-full" id="sendMessageBtn">
+              Skicka meddelande
+            </button>
+          </div>
+
+          <!-- Kontaktinformation -->
+          <div class="contact-info">
+            <h2>Kontaktuppgifter</h2>
+
+            <div class="contact-item">
+              <div class="contact-icon"></div>
+              <div>
+                <strong>Adress</strong>
+                <p>Kungsportsavenyen 1<br>411 36 Göteborg</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"></div>
+              <div>
+                <strong>E-post</strong>
+                <p>info@westcoast.edu</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"></div>
+              <div>
+                <strong>Telefon</strong>
+                <p>031-123 45 67</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"></div>
+              <div>
+                <strong>Öppettider</strong>
+                <p>Måndag–Fredag: 08:00–17:00<br>Helger: Stängt</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer></footer>
+  <script type="module" src="./contact.js"></script>
+</body>
+</html>

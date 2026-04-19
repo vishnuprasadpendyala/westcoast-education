@@ -1,0 +1,120 @@
+.auth-section {
+  min-height: calc(100vh - 68px);
+  background: linear-gradient(135deg, #0f172a, #1e3a5f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Vit inloggningsruta centrerad på sidan */
+.auth-login-box {
+  background: white;
+  border-radius: var(--border-radius-xl);
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: var(--shadow-xl);
+}
+
+/* Rubrik och undertext */
+.auth-login-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.auth-login-header h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.auth-login-header p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Flikrad med bakgrundsfärg */
+.auth-tabs {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  padding: 4px;
+  margin-bottom: 28px;
+}
+
+/* Enskild flik */
+.auth-tab {
+  flex: 1;
+  padding: 10px;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all var(--transition);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Aktiv flik markeras med vit bakgrund */
+.auth-tab.active {
+  background: white;
+  color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Dölj inaktivt formulär */
+.hidden { display: none; }
+
+/* Behållare för lösenordsfält med knapp */
+.input-with-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-with-toggle input {
+  width: 100%;
+  padding-right: 44px;
+}
+
+/* Knapp för att visa/dölja lösenord */
+.toggle-pwd {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  padding: 4px;
+}
+
+/* Knapp som täcker full bredd */
+.btn-full {
+  width: 100%;
+  justify-content: center;
+  padding: 12px;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* Tips om testinloggning */
+.auth-hint {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 16px;
+  background: var(--bg-secondary);
+  padding: 8px 12px;
+  border-radius: var(--border-radius-md);
+}
+
+/* Mobil — mindre padding */
+@media (max-width: 480px) {
+  .auth-login-box { padding: 24px; }
+  .auth-login-header h1 { font-size: 1.5rem; }
+}

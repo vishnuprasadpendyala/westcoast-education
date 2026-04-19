@@ -1,0 +1,126 @@
+.page-hero {
+  background: linear-gradient(135deg, #1e3a5f, #1e40af);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.page-hero p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.8);
+}
+
+/* Tvåkolumnslayout för formulär och kontaktinfo */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Kortbehållare för kontaktformuläret */
+.contact-form-card {
+  background: white;
+  border-radius: var(--border-radius-lg);
+  padding: 40px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-form-card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.contact-form-card > p {
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+}
+
+/* Knapp som täcker full bredd */
+.btn-full {
+  width: 100%;
+  justify-content: center;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 24px;
+}
+
+/* Rad med ikon och kontakttext */
+.contact-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: flex-start;
+}
+
+/* Ikonbehållare för kontaktuppgifter */
+.contact-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--border-radius-md);
+  background: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.contact-icon::after {
+  content: '•';
+}
+
+.contact-item strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+.contact-item p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Kartbehållare */
+.contact-map {
+  margin-top: 28px;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.contact-map iframe {
+  border: 0;
+  border-radius: var(--border-radius-md);
+}
+
+/* Tablet — en kolumn */
+@media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* Mobil — mindre padding på formulärkort */
+@media (max-width: 480px) {
+  .contact-form-card { padding: 24px; }
+}

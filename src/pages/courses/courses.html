@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kurser | Westcoast Education</title>
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/navbar.css" />
+  <link rel="stylesheet" href="../../css/footer.css" />
+  <link rel="stylesheet" href="./courses.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Hoppa till innehållet</a>
+  <header></header>
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Våra kurser</h1>
+        <p>Hitta rätt kurs för din karriär inom Web3, AI, Cybersäkerhet och DevOps</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- Dropdown-filter för kursområde -->
+        <div class="filters-bar">
+          <div class="filter-dropdown">
+            <button class="filter-dropdown-btn" id="filterDropdownBtn">
+              <span id="filterLabel">Alla kurser</span>
+              <span class="dropdown-arrow">▾</span>
+            </button>
+            <div class="filter-dropdown-menu" id="filterDropdownMenu" hidden>
+              <button class="filter-option active" data-area="all">Alla kurser</button>
+              <button class="filter-option" data-area="web3">Web3 &amp; Blockchain</button>
+              <button class="filter-option" data-area="ai">Artificiell Intelligens</button>
+              <button class="filter-option" data-area="cybersecurity">Cybersäkerhet</button>
+              <button class="filter-option" data-area="devops">DevOps &amp; Cloud</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Antal synliga kurser -->
+        <p class="results-count" id="results-count"></p>
+
+        <!-- Kurskort-rutnät -->
+        <div id="courses-grid" class="grid-3">
+          <div class="loading-container"><div class="spinner"></div></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script type="module" src="./courses.js"></script>
+</body>
+</html>
