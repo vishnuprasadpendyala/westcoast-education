@@ -5,7 +5,7 @@ export default class ApiClient {
   // Privat variabel för resursnamnet (t.ex. 'courses', 'teachers')
   #resource;
 
-  // Konstruktor 
+  // Konstruktor
   constructor(resource) {
     this.#resource = resource;
   }

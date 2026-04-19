@@ -14,7 +14,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&q=80",
       "plannedDate": "2026-05-12",
-      "description": "En introduktionskurs till Web3-teknologi. Du lär dig grunderna i decentraliserade applikationer, blockchain-protokoll och smarta kontrakt.",
+      "description": "En introduktionskurs som ger dig grunderna i Web3-utveckling. Efter att ha slutfört kursen kommer du att ha en förståelse för blockkedjeteknik, decentraliserade protokoll och smarta kontrakt.",
       "teacher": "t1",
       "ratings": [
         5,
@@ -42,7 +42,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1644143379190-08a5f055de1d?w=600&q=80",
       "plannedDate": "2026-06-02",
-      "description": "En fördjupningskurs i blockkedjeteknik för utvecklare. Du bygger decentraliserade applikationer med Solidity och Hardhat.",
+      "description": "En fördjupad kurs för utvecklare som utrustar ypu med färdigheter att bygga decentraliserade applikationer med Solidity och Hardhat.",
       "teacher": "t1",
       "ratings": [
         5,
@@ -69,7 +69,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1621501103258-9253f9ea6de6?w=600&q=80",
       "plannedDate": "2026-07-14",
-      "description": "Lär dig ekonomin bakom kryptovalutor och token-ekosystem. Kursen täcker tokendesign, DeFi-protokoll och likviditetspooler.",
+      "description": "En introduktion till tokenomics som ger dig en förståelse för hur digitala tillgångar designas och fungerar inom Web3-ekosystem. Efter att ha slutfört kursen kommer du att ha kunskap om tokenfördelning, och hur ekonomiska modeller påverkar värde och hållbarhet i blockkedjeprojekt.",
       "teacher": "t2",
       "ratings": [
         4,
@@ -98,7 +98,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80",
       "plannedDate": "2026-08-25",
-      "description": "Lär dig identifiera och åtgärda säkerhetssårbarheter i smarta kontrakt.",
+      "description": "Kursen  ger dig en förståelse för hur säkerhet och tillförlitlighet säkerställs i Web3-applikationer. Efter att ha slutfört kursen kommer du att ha kunskap om vanliga sårbarheter, granskningsmetoder och bästa praxis för att förebygga risker i smarta kontrakt.",
       "teacher": "t3",
       "ratings": [
         5,
@@ -126,7 +126,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&q=80",
       "plannedDate": "2026-09-01",
-      "description": "Bygg kompletta Web3-applikationer från grunden med React, Ethers.js och Solidity.",
+      "description": "Lär dig att bygga frontend och backend för web 3 applikationer. Efter att ha slutfört kursen kommer du att ha kunskap om hur man integrerar smarta kontrakt och hanterar användarinteraktioner i ett Web3-ekosystem.",
       "teacher": "t1",
       "ratings": [
         5,
@@ -154,7 +154,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&q=80",
       "plannedDate": "2026-05-19",
-      "description": "Den matematiska grunden för maskininlärning och AI. Kursen täcker linjär algebra, sannolikhetslära och statistik.",
+      "description": "En introduktion till matematik och statistik för AI som ger dig den matematiska grunden för maskininlärning och artificiell intelligens. Kursen täcker linjär algebra, sannolikhetslära och statistik",
       "teacher": "t4",
       "ratings": [
         4,
@@ -183,7 +183,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=80",
       "plannedDate": "2026-06-16",
-      "description": "En bred introduktionskurs till artificiell intelligens med maskininlärning, djupinlärning och NLP.",
+      "description": "Få en solid grund i maskininlärning och praktiska tillämpningar av AI genom denna kurs.",
       "teacher": "t4",
       "ratings": [
         5,
@@ -212,7 +212,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1680011854776-d0e03d4a5e3e?w=600&q=80",
       "plannedDate": "2026-07-07",
-      "description": "Fördjupa dig i generativ AI och stora språkmodeller. Kursen täcker LLM, prompt engineering och finjustering.",
+      "description": "Generativ AI och språkmodeller kurs ger dig en förståelse för hur AI kan skapa text, bild och annat innehåll. Efter att ha slutfört kursen kommer du att ha kunskap om hur språkmodeller fungerar, hur de tränas och hur de används i praktiska tillämpningar.",
       "teacher": "t5",
       "ratings": [
         5,
@@ -239,7 +239,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600&q=80",
       "plannedDate": "2026-08-11",
-      "description": "Praktisk Python-programmering för maskininlärning med NumPy, Pandas och scikit-learn.",
+      "description": "Få en förståelse för databehandling, grundläggande algoritmer och hur programmering används för att bygga intelligenta system.",
       "teacher": "t4",
       "ratings": [
         4,
@@ -268,7 +268,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80",
       "plannedDate": "2026-05-26",
-      "description": "Grundläggande nätverksteknik för säkerhetsspecialister. TCP/IP, protokoll och nätverksövervakning.",
+      "description": "Få en förståelse för nätverksprotokoll och nätverksarkitektur genom en grundkurs i nätverksteknik.",
       "teacher": "t5",
       "ratings": [
         4,
@@ -296,7 +296,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600&q=80",
       "plannedDate": "2026-06-23",
-      "description": "Kryptografins teori och praktik – symmetrisk och asymmetrisk kryptering, hashfunktioner och digitala signaturer.",
+      "description": "Få kunskap om hur information säkras, kryptografiska metoder och praktiska aspekter av kryptografi.",
       "teacher": "t6",
       "ratings": [
         5,
@@ -325,7 +325,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600&q=80",
       "plannedDate": "2026-07-21",
-      "description": "Säkerhet i webbapplikationer enligt OWASP Top 10. SQL-injection, XSS, CSRF och penetrationstestning.",
+      "description": "En introduktion kurs som ger dig en förståelse för hur webbaserade system skyddas mot hot och sårbarheter. ",
       "teacher": "t5",
       "ratings": [
         5,
@@ -354,7 +354,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80",
       "plannedDate": "2026-08-18",
-      "description": "Lär dig hantera säkerhetsincidenter professionellt med digital forensik och logganalys.",
+      "description": "Få kunskap om hur säkerhetsincidenter identifieras, bedöms och hanteras.",
       "teacher": "t6",
       "ratings": [
         4,
@@ -381,7 +381,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&q=80",
       "plannedDate": "2026-09-15",
-      "description": "Certifieringsförberedande kurs i etisk hackning (CEH) med Kali Linux och penetrationstestning.",
+      "description": "En certifieringsförberedande kurs i etisk hackning (CEH) som ger dig kunskap om att arbeta med penetrationstestning med verktyg som Kali Linux.",
       "teacher": "t5",
       "ratings": [
         5,
@@ -437,7 +437,7 @@
       ],
       "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80",
       "plannedDate": "2026-07-28",
-      "description": "Optimera och kontrollera molnutgifter med FinOps-metodiken och kostnadsövervakning.",
+      "description": "Lär dig att optimera och kontrollera molnutgifter med hjälp av FinOps-metodiken och effektiv kostnadsövervakning.",
       "teacher": "t8",
       "ratings": [
         4,
@@ -634,8 +634,33 @@
   ],
   "students": [
     {
-      "subscriptionActive": false,
-      "id": "s1"
+      "id": "s1",
+      "name": "Johan Karlsson",
+      "email": "johan@test.se",
+      "password": "test123",
+      "phone": "070-123 45 67",
+      "address": "Storgatan 12, 411 38 Göteborg",
+      "joinedDate": "2025-01-15",
+      "xpPoints": 120,
+      "interests": [
+        "web3",
+        "ai"
+      ],
+      "learningFocus": "web3",
+      "subscriptionActive": false
+    },
+    {
+      "id": "mo5dpx3cagcco",
+      "name": "Lars",
+      "email": "lw16vvpp@gmail.com",
+      "password": "admin123",
+      "phone": "0701234567",
+      "address": "Storgatan 1, stockholm",
+      "joinedDate": "2026-04-19",
+      "xpPoints": 0,
+      "interests": [],
+      "learningFocus": null,
+      "subscriptionActive": false
     }
   ],
   "admins": [
@@ -648,19 +673,8 @@
   ],
   "bookings": [
     {
-      "id": "b1",
-      "studentId": "s1",
-      "courseId": "c1",
-      "bookingDate": "2025-11-15",
-      "status": "confirmed",
-      "paymentStatus": "paid",
-      "amount": 12000,
-      "type": "classroom",
-      "progress": 75,
-      "customerName": "Johan Karlsson",
-      "customerEmail": "johan@test.se",
-      "customerPhone": "070-123 45 67",
-      "customerAddress": "Storgatan 12, 411 38 Göteborg"
+      "progress": 76,
+      "id": "b1"
     },
     {
       "id": "b2",
@@ -676,10 +690,103 @@
       "customerEmail": "johan@test.se",
       "customerPhone": "070-123 45 67",
       "customerAddress": "Storgatan 12, 411 38 Göteborg"
+    },
+    {
+      "id": "mo5dlnggd0xus",
+      "studentId": "s1",
+      "courseId": "c4",
+      "type": "classroom",
+      "amount": 15000,
+      "bookingDate": "2026-04-19",
+      "status": "confirmed",
+      "paymentStatus": "paid",
+      "progress": 0,
+      "customerName": "Johan Karlsson",
+      "customerEmail": "johan@test.se",
+      "customerPhone": "070-123 45 67",
+      "customerAddress": "Storgatan 12, 411 38 Göteborg"
+    },
+    {
+      "id": "mo5ee058rv35t",
+      "studentId": "s1",
+      "courseId": "c1",
+      "type": "classroom",
+      "amount": 12000,
+      "bookingDate": "2026-04-19",
+      "status": "confirmed",
+      "paymentStatus": "paid",
+      "progress": 0,
+      "customerName": "Johan Karlsson",
+      "customerEmail": "johan@test.se",
+      "customerPhone": "070-123 45 67",
+      "customerAddress": "Storgatan 12, 411 38 Göteborg"
+    },
+    {
+      "id": "mo5ekiu5sgbzf",
+      "studentId": "s1",
+      "courseId": "c2",
+      "type": "classroom",
+      "amount": 18000,
+      "bookingDate": "2026-04-19",
+      "status": "confirmed",
+      "paymentStatus": "paid",
+      "progress": 0,
+      "customerName": "Johan Karlsson",
+      "customerEmail": "johan@test.se",
+      "customerPhone": "070-123 45 67",
+      "customerAddress": "Storgatan 12, 411 38 Göteborg"
+    },
+    {
+      "id": "mo5gor5uy5z7r",
+      "studentId": "s1",
+      "courseId": "c5",
+      "type": "distance",
+      "amount": 22000,
+      "bookingDate": "2026-04-19",
+      "status": "confirmed",
+      "paymentStatus": "paid",
+      "progress": 0,
+      "customerName": "Johan Karlsson",
+      "customerEmail": "johan@test.se",
+      "customerPhone": "070-123 45 67",
+      "customerAddress": "Storgatan 12, 411 38 Göteborg"
     }
   ],
   "messages": [],
-  "notifications": [],
+  "notifications": [
+    {
+      "id": "mo5dlnhshxl5e",
+      "userId": "s1",
+      "message": "Bokningsbekräftelse: Du har bokat \"Granskning av Smarta Kontrakt\" (WEB3-401). Startdatum: 25 augusti 2026. Pris: 15 000 kr. Format: Klassrum.",
+      "type": "booking",
+      "timestamp": "2026-04-19T06:19:22.288Z",
+      "read": false
+    },
+    {
+      "id": "mo5ee067kq5qc",
+      "userId": "s1",
+      "message": "Bokningsbekräftelse: Du har bokat \"Web3 Grundkurs\" (WEB3-101). Startdatum: 12 maj 2026. Pris: 12 000 kr. Format: Klassrum.",
+      "type": "booking",
+      "timestamp": "2026-04-19T06:41:25.087Z",
+      "read": false
+    },
+    {
+      "id": "mo5ekiuzbfe3a",
+      "userId": "s1",
+      "message": "Bokningsbekräftelse: Du har bokat \"Blockkedjeutveckling\" (WEB3-201). Startdatum: 2 juni 2026. Pris: 18 000 kr. Format: Klassrum.",
+      "type": "booking",
+      "timestamp": "2026-04-19T06:46:29.243Z",
+      "read": false
+    },
+    {
+      "id": "mo5gor74ztltg",
+      "userId": "s1",
+      "message": "Bokningsbekräftelse: Du har bokat \"Fullstack Web3-utveckling\" (WEB3-501). Startdatum: 1 september 2026. Pris: 22 000 kr. Format: Distans.",
+      "type": "booking",
+      "timestamp": "2026-04-19T07:45:45.904Z",
+      "read": false
+    }
+  ],
   "refunds": [],
   "contactMessages": [
     {
@@ -689,6 +796,15 @@
       "subject": "other",
       "message": "###",
       "timestamp": "2026-04-17T20:29:28.997Z",
+      "read": false
+    },
+    {
+      "id": "mo5d42tgfsxxu",
+      "name": "Lars",
+      "email": "lw16vvpp@gmail.com",
+      "subject": "other",
+      "message": "Skulle jag få en uppdatering efter att jag köpt en kurs?",
+      "timestamp": "2026-04-19T06:05:42.340Z",
       "read": false
     }
   ]

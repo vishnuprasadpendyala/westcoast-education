@@ -11,6 +11,6 @@
     "rootDir": "./src",
     "noEmit": false
   },
-  "include": ["src/ts/**/*.ts", "src/models/types.ts"],
+  "include": ["src/ts/**/*.ts", "src/models/types.ts", "src/data/*.ts", "src/config/*.ts"],
   "exclude": ["node_modules", "src/ts/**/*.test.ts"]
 }

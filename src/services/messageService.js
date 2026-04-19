@@ -48,9 +48,9 @@ export const sendPurchaseRecommendation = (studentId, courseName, courseArea, al
 
   return client.create({
     id: generateId(),
-    fromId: 'a1',
+    fromId: 'system',
     fromName: 'Westcoast Education',
-    fromRole: 'admin',
+    fromRole: 'system',
     toId: studentId,
     toRole: 'student',
     subject: `Bokningsbekräftelse & kursrekommendation: ${courseName}`,
