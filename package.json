@@ -1,0 +1,20 @@
+{
+  "name": "westcoast-education",
+  "version": "1.0.0",
+  "description": "Westcoast Education – IT-utbildningsplattform",
+  "type": "module",
+  "scripts": {
+    "build:ts": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "server": "json-server --watch src/data/db.json --port 3000",
+    "dev": "npx live-server src --port=8080 --open=index.html"
+  },
+  "devDependencies": {
+    "@vitest/ui": "^2.1.0",
+    "happy-dom": "^15.0.0",
+    "json-server": "^0.17.4",
+    "typescript": "^5.4.0",
+    "vitest": "^2.1.0"
+  }
+}

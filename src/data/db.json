@@ -1,0 +1,695 @@
+{
+  "courses": [
+    {
+      "id": "c1",
+      "title": "Web3 Grundkurs",
+      "courseNumber": "WEB3-101",
+      "area": "web3",
+      "type": "classroom",
+      "days": 5,
+      "price": 12000,
+      "availability": [
+        "classroom",
+        "distance"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&q=80",
+      "plannedDate": "2026-05-12",
+      "description": "En introduktionskurs till Web3-teknologi. Du lär dig grunderna i decentraliserade applikationer, blockchain-protokoll och smarta kontrakt.",
+      "teacher": "t1",
+      "ratings": [
+        5,
+        4,
+        5,
+        4,
+        5
+      ],
+      "tags": [
+        "blockchain",
+        "ethereum",
+        "web3"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Blockkedjeutveckling",
+      "courseNumber": "WEB3-201",
+      "area": "web3",
+      "type": "classroom",
+      "days": 10,
+      "price": 18000,
+      "availability": [
+        "classroom"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1644143379190-08a5f055de1d?w=600&q=80",
+      "plannedDate": "2026-06-02",
+      "description": "En fördjupningskurs i blockkedjeteknik för utvecklare. Du bygger decentraliserade applikationer med Solidity och Hardhat.",
+      "teacher": "t1",
+      "ratings": [
+        5,
+        5,
+        4,
+        5
+      ],
+      "tags": [
+        "solidity",
+        "dapp",
+        "hardhat"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "Tokenomik",
+      "courseNumber": "WEB3-301",
+      "area": "web3",
+      "type": "distance",
+      "days": 3,
+      "price": 8500,
+      "availability": [
+        "distance"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1621501103258-9253f9ea6de6?w=600&q=80",
+      "plannedDate": "2026-07-14",
+      "description": "Lär dig ekonomin bakom kryptovalutor och token-ekosystem. Kursen täcker tokendesign, DeFi-protokoll och likviditetspooler.",
+      "teacher": "t2",
+      "ratings": [
+        4,
+        4,
+        5,
+        3,
+        4
+      ],
+      "tags": [
+        "defi",
+        "tokens",
+        "krypto"
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "Granskning av Smarta Kontrakt",
+      "courseNumber": "WEB3-401",
+      "area": "web3",
+      "type": "classroom",
+      "days": 5,
+      "price": 15000,
+      "availability": [
+        "classroom",
+        "distance"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80",
+      "plannedDate": "2026-08-25",
+      "description": "Lär dig identifiera och åtgärda säkerhetssårbarheter i smarta kontrakt.",
+      "teacher": "t3",
+      "ratings": [
+        5,
+        5,
+        5,
+        4,
+        5
+      ],
+      "tags": [
+        "säkerhet",
+        "granskning",
+        "solidity"
+      ]
+    },
+    {
+      "id": "c5",
+      "title": "Fullstack Web3-utveckling",
+      "courseNumber": "WEB3-501",
+      "area": "web3",
+      "type": "distance",
+      "days": 15,
+      "price": 22000,
+      "availability": [
+        "distance"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&q=80",
+      "plannedDate": "2026-09-01",
+      "description": "Bygg kompletta Web3-applikationer från grunden med React, Ethers.js och Solidity.",
+      "teacher": "t1",
+      "ratings": [
+        5,
+        4,
+        5,
+        5
+      ],
+      "tags": [
+        "react",
+        "fullstack",
+        "web3"
+      ]
+    },
+    {
+      "id": "c6",
+      "title": "Matematik och Statistik för AI",
+      "courseNumber": "AI-101",
+      "area": "ai",
+      "type": "classroom",
+      "days": 5,
+      "price": 11000,
+      "availability": [
+        "classroom",
+        "distance"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&q=80",
+      "plannedDate": "2026-05-19",
+      "description": "Den matematiska grunden för maskininlärning och AI. Kursen täcker linjär algebra, sannolikhetslära och statistik.",
+      "teacher": "t4",
+      "ratings": [
+        4,
+        5,
+        4,
+        4,
+        3
+      ],
+      "tags": [
+        "matematik",
+        "statistik",
+        "maskininlärning"
+      ]
+    },
+    {
+      "id": "c7",
+      "title": "Grunderna i Artificiell Intelligens",
+      "courseNumber": "AI-201",
+      "area": "ai",
+      "type": "classroom",
+      "days": 5,
+      "price": 13000,
+      "availability": [
+        "classroom",
+        "distance"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=80",
+      "plannedDate": "2026-06-16",
+      "description": "En bred introduktionskurs till artificiell intelligens med maskininlärning, djupinlärning och NLP.",
+      "teacher": "t4",
+      "ratings": [
+        5,
+        5,
+        4,
+        5,
+        5
+      ],
+      "tags": [
+        "ai",
+        "maskininlärning",
+        "djupinlärning"
+      ]
+    },
+    {
+      "id": "c8",
+      "title": "Generativ AI och Språkmodeller",
+      "courseNumber": "AI-301",
+      "area": "ai",
+      "type": "distance",
+      "days": 5,
+      "price": 16000,
+      "availability": [
+        "classroom",
+        "distance"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1680011854776-d0e03d4a5e3e?w=600&q=80",
+      "plannedDate": "2026-07-07",
+      "description": "Fördjupa dig i generativ AI och stora språkmodeller. Kursen täcker LLM, prompt engineering och finjustering.",
+      "teacher": "t5",
+      "ratings": [
+        5,
+        5,
+        5,
+        4
+      ],
+      "tags": [
+        "llm",
+        "gpt",
+        "prompt engineering"
+      ]
+    },
+    {
+      "id": "c9",
+      "title": "Python för AI och Maskininlärning",
+      "courseNumber": "AI-401",
+      "area": "ai",
+      "type": "distance",
+      "days": 8,
+      "price": 14000,
+      "availability": [
+        "distance"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600&q=80",
+      "plannedDate": "2026-08-11",
+      "description": "Praktisk Python-programmering för maskininlärning med NumPy, Pandas och scikit-learn.",
+      "teacher": "t4",
+      "ratings": [
+        4,
+        5,
+        4,
+        4,
+        5
+      ],
+      "tags": [
+        "python",
+        "numpy",
+        "pandas"
+      ]
+    },
+    {
+      "id": "c10",
+      "title": "Nätverksteknik Grundkurs",
+      "courseNumber": "SAK-101",
+      "area": "cybersecurity",
+      "type": "classroom",
+      "days": 5,
+      "price": 10000,
+      "availability": [
+        "classroom",
+        "distance"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80",
+      "plannedDate": "2026-05-26",
+      "description": "Grundläggande nätverksteknik för säkerhetsspecialister. TCP/IP, protokoll och nätverksövervakning.",
+      "teacher": "t5",
+      "ratings": [
+        4,
+        4,
+        5,
+        4,
+        4
+      ],
+      "tags": [
+        "nätverk",
+        "tcp/ip",
+        "wireshark"
+      ]
+    },
+    {
+      "id": "c11",
+      "title": "Kryptografi",
+      "courseNumber": "SAK-201",
+      "area": "cybersecurity",
+      "type": "classroom",
+      "days": 5,
+      "price": 12000,
+      "availability": [
+        "classroom"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600&q=80",
+      "plannedDate": "2026-06-23",
+      "description": "Kryptografins teori och praktik – symmetrisk och asymmetrisk kryptering, hashfunktioner och digitala signaturer.",
+      "teacher": "t6",
+      "ratings": [
+        5,
+        4,
+        5,
+        5,
+        4
+      ],
+      "tags": [
+        "kryptering",
+        "aes",
+        "rsa"
+      ]
+    },
+    {
+      "id": "c12",
+      "title": "Webbapplikationssäkerhet",
+      "courseNumber": "SAK-301",
+      "area": "cybersecurity",
+      "type": "distance",
+      "days": 5,
+      "price": 13000,
+      "availability": [
+        "classroom",
+        "distance"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600&q=80",
+      "plannedDate": "2026-07-21",
+      "description": "Säkerhet i webbapplikationer enligt OWASP Top 10. SQL-injection, XSS, CSRF och penetrationstestning.",
+      "teacher": "t5",
+      "ratings": [
+        5,
+        5,
+        5,
+        4,
+        5
+      ],
+      "tags": [
+        "owasp",
+        "penetrationstestning",
+        "burpsuite"
+      ]
+    },
+    {
+      "id": "c13",
+      "title": "Incidenthantering",
+      "courseNumber": "SAK-401",
+      "area": "cybersecurity",
+      "type": "classroom",
+      "days": 3,
+      "price": 9000,
+      "availability": [
+        "classroom",
+        "distance"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80",
+      "plannedDate": "2026-08-18",
+      "description": "Lär dig hantera säkerhetsincidenter professionellt med digital forensik och logganalys.",
+      "teacher": "t6",
+      "ratings": [
+        4,
+        5,
+        4,
+        4
+      ],
+      "tags": [
+        "forensik",
+        "incident",
+        "csirt"
+      ]
+    },
+    {
+      "id": "c14",
+      "title": "Etisk Hackning",
+      "courseNumber": "SAK-501",
+      "area": "cybersecurity",
+      "type": "classroom",
+      "days": 10,
+      "price": 18000,
+      "availability": [
+        "classroom"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&q=80",
+      "plannedDate": "2026-09-15",
+      "description": "Certifieringsförberedande kurs i etisk hackning (CEH) med Kali Linux och penetrationstestning.",
+      "teacher": "t5",
+      "ratings": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "tags": [
+        "kali",
+        "pentest",
+        "ceh"
+      ]
+    },
+    {
+      "id": "c15",
+      "title": "DevOps och Molntjänster",
+      "courseNumber": "DEV-101",
+      "area": "devops",
+      "type": "classroom",
+      "days": 10,
+      "price": 16000,
+      "availability": [
+        "classroom",
+        "distance"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&q=80",
+      "plannedDate": "2026-06-09",
+      "description": "Modern DevOps-praktik med CI/CD, Docker, Kubernetes och Infrastructure as Code med Terraform.",
+      "teacher": "t7",
+      "ratings": [
+        5,
+        4,
+        5,
+        4,
+        5
+      ],
+      "tags": [
+        "docker",
+        "kubernetes",
+        "ci/cd"
+      ]
+    },
+    {
+      "id": "c16",
+      "title": "FinOps – Molnkostnadshantering",
+      "courseNumber": "DEV-201",
+      "area": "devops",
+      "type": "distance",
+      "days": 3,
+      "price": 9500,
+      "availability": [
+        "distance"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80",
+      "plannedDate": "2026-07-28",
+      "description": "Optimera och kontrollera molnutgifter med FinOps-metodiken och kostnadsövervakning.",
+      "teacher": "t8",
+      "ratings": [
+        4,
+        4,
+        5,
+        4
+      ],
+      "tags": [
+        "finops",
+        "aws",
+        "kostnad"
+      ]
+    },
+    {
+      "id": "od1",
+      "title": "Web3 Introduktion – On-demand",
+      "courseNumber": "WEB3-OD1",
+      "area": "web3",
+      "type": "ondemand",
+      "days": 3,
+      "price": 1499,
+      "availability": [
+        "ondemand"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&q=80",
+      "plannedDate": "2026-01-01",
+      "description": "En komplett introduktion till Web3 i ditt eget tempo. Förinspelade föreläsningar, quizzer och praktiska övningar.",
+      "teacher": "t1",
+      "ratings": [
+        5,
+        4,
+        5,
+        5,
+        4
+      ],
+      "tags": [
+        "blockchain",
+        "ethereum",
+        "web3"
+      ]
+    },
+    {
+      "id": "od2",
+      "title": "AI Grundkurs – On-demand",
+      "courseNumber": "AI-OD1",
+      "area": "ai",
+      "type": "ondemand",
+      "days": 4,
+      "price": 1799,
+      "availability": [
+        "ondemand"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=80",
+      "plannedDate": "2026-01-01",
+      "description": "Lär dig grunderna i artificiell intelligens och maskininlärning i din egen takt med förinspelade lektioner.",
+      "teacher": "t4",
+      "ratings": [
+        5,
+        5,
+        4,
+        5
+      ],
+      "tags": [
+        "ai",
+        "maskininlärning",
+        "python"
+      ]
+    },
+    {
+      "id": "od3",
+      "title": "Cybersäkerhet Grunder – On-demand",
+      "courseNumber": "SAK-OD1",
+      "area": "cybersecurity",
+      "type": "ondemand",
+      "days": 3,
+      "price": 1299,
+      "availability": [
+        "ondemand"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600&q=80",
+      "plannedDate": "2026-01-01",
+      "description": "Grundläggande cybersäkerhet för alla. Lär dig skydda system och nätverk med förinspelade lektioner och övningar.",
+      "teacher": "t5",
+      "ratings": [
+        4,
+        5,
+        4,
+        4,
+        5
+      ],
+      "tags": [
+        "säkerhet",
+        "nätverk",
+        "kryptering"
+      ]
+    }
+  ],
+  "teachers": [
+    {
+      "id": "t1",
+      "name": "Erik Johansson",
+      "email": "erik.johansson@westcoast.edu",
+      "specialization": "web3",
+      "bio": "Blockkedjeexpert med 8 års erfarenhet. Tidigare senioringenjör på Ethereum Foundation.",
+      "imageUrl": "",
+      "courses": [
+        "c1",
+        "c2",
+        "c5"
+      ]
+    },
+    {
+      "id": "t2",
+      "name": "Sara Lindström",
+      "email": "sara.lindstrom@westcoast.edu",
+      "specialization": "web3",
+      "bio": "DeFi-analytiker och tokenomik-expert. Tidigare teknisk chef på en nordisk kryptostartup.",
+      "imageUrl": "",
+      "courses": [
+        "c3"
+      ]
+    },
+    {
+      "id": "t3",
+      "name": "Marcus Berg",
+      "email": "marcus.berg@westcoast.edu",
+      "specialization": "web3",
+      "bio": "Säkerhetsforskare inom smarta kontrakt. Certifierad Ethereum-säkerhetsgranskare.",
+      "imageUrl": "",
+      "courses": [
+        "c4"
+      ]
+    },
+    {
+      "id": "t4",
+      "name": "Lena Pettersson",
+      "email": "lena.pettersson@westcoast.edu",
+      "specialization": "ai",
+      "bio": "AI-forskare och doktor i maskininlärning från KTH. Tidigare forskare på Google DeepMind.",
+      "imageUrl": "",
+      "courses": [
+        "c6",
+        "c7",
+        "c9"
+      ]
+    },
+    {
+      "id": "t5",
+      "name": "Johan Karlsson",
+      "email": "johan.karlsson@westcoast.edu",
+      "specialization": "cybersecurity",
+      "bio": "Certifierad etisk hackare (CEH, OSCP). 12 års erfarenhet inom IT-säkerhet.",
+      "imageUrl": "",
+      "courses": [
+        "c10",
+        "c12",
+        "c14"
+      ]
+    },
+    {
+      "id": "t6",
+      "name": "Anna Svensson",
+      "email": "anna.svensson@westcoast.edu",
+      "specialization": "cybersecurity",
+      "bio": "Specialist inom kryptografi och incidenthantering. CISSP-certifierad med 15 års branscherfarenhet.",
+      "imageUrl": "",
+      "courses": [
+        "c11",
+        "c13"
+      ]
+    },
+    {
+      "id": "t7",
+      "name": "Peter Nilsson",
+      "email": "peter.nilsson@westcoast.edu",
+      "specialization": "devops",
+      "bio": "DevOps-ingenjör och molnarkitekt. AWS Solutions Architect Professional och Kubernetes CKA-certifierad.",
+      "imageUrl": "",
+      "courses": [
+        "c15"
+      ]
+    },
+    {
+      "id": "t8",
+      "name": "Sofia Andersson",
+      "email": "sofia.andersson@westcoast.edu",
+      "specialization": "devops",
+      "bio": "FinOps-certifierad konsult. Hjälper företag att optimera och minska sina molnutgifter.",
+      "imageUrl": "",
+      "courses": [
+        "c16"
+      ]
+    }
+  ],
+  "students": [
+    {
+      "subscriptionActive": false,
+      "id": "s1"
+    }
+  ],
+  "admins": [
+    {
+      "id": "a1",
+      "name": "Admin Westcoast",
+      "email": "admin@westcoast.edu",
+      "password": "admin123"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "b1",
+      "studentId": "s1",
+      "courseId": "c1",
+      "bookingDate": "2025-11-15",
+      "status": "confirmed",
+      "paymentStatus": "paid",
+      "amount": 12000,
+      "type": "classroom",
+      "progress": 75,
+      "customerName": "Johan Karlsson",
+      "customerEmail": "johan@test.se",
+      "customerPhone": "070-123 45 67",
+      "customerAddress": "Storgatan 12, 411 38 Göteborg"
+    },
+    {
+      "id": "b2",
+      "studentId": "s1",
+      "courseId": "c7",
+      "bookingDate": "2025-12-01",
+      "status": "confirmed",
+      "paymentStatus": "paid",
+      "amount": 13000,
+      "type": "classroom",
+      "progress": 40,
+      "customerName": "Johan Karlsson",
+      "customerEmail": "johan@test.se",
+      "customerPhone": "070-123 45 67",
+      "customerAddress": "Storgatan 12, 411 38 Göteborg"
+    }
+  ],
+  "messages": [],
+  "notifications": [],
+  "refunds": [],
+  "contactMessages": [
+    {
+      "id": "mo3d376t1ec6e",
+      "name": "Vishnu",
+      "email": "venkataramavishnuprasad.pendyala@medieinstitutet.se",
+      "subject": "other",
+      "message": "###",
+      "timestamp": "2026-04-17T20:29:28.997Z",
+      "read": false
+    }
+  ]
+}
